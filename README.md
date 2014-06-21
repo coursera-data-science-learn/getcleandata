@@ -1,6 +1,6 @@
 Course: Getting and Cleaning Data
 
-Submission Date: 17.06.2014
+Submission Date: 21.06.2014
 
 Prepared by: Titorchuk Oleksandr
 
