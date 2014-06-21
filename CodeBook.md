@@ -89,5 +89,5 @@ We are interested in mean() and std() indicators for our study project.
 
 ## Data Processing
 Original dataset contained 10299 observations of 561 variables, separated by subject and activity.
-Interim dataset contained only 66 variables, i.e. mean() and std(). variables named like "...gravityMean)" or "...meanFreq()" were not included.
+Interim dataset contained only 66 variables, i.e. mean() and std(). Variables named like "...gravityMean)" or "...meanFreq()" were not included.
 Final tidy dataset contains 180 observations (30 subjects*6 activities) of averaged mean() and std().
