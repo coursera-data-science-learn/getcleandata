@@ -1,8 +1,8 @@
+## Code description: run_analysis.R
+
 Course: Getting and Cleaning Data
 Submission Date: 17.06.2014
 Prepared by: Titorchuk Oleksandr
-
-## Code description: run_analysis.R
 
 This file provides details on how the original data was processed, and how the script, which handles it works.
 
