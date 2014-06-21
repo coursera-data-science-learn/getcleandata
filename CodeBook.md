@@ -2,6 +2,7 @@ Course: Getting and Cleaning Data
 Submission Date: 21.06.2014	
 Prepared by: Titorchuk Oleksandr
 
+
 ## Code Book
 
 This code book provides details on the raw data and methods used to transform it into the form suitable for further analysis.
