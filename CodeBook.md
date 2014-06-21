@@ -1,5 +1,7 @@
 Course: Getting and Cleaning Data
-Submission Date:
+
+Submission Date: 21.06.2014
+
 Prepared by: Titorchuk Oleksandr
 
 ## Code Book
