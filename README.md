@@ -28,6 +28,6 @@ The next step is to merge "activity" and "subject" datasets, which will represen
 gsub() function is used to rename variables' names of the 'X' data.frame to make them more descriptive.
 
 ### 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject
-The 'reshape2'package let us easily melt and cast the data by 'subject' and 'activity' applying the mean() function. 
+The 'reshape2' package let us easily melt and cast the data by 'subject' and 'activity' applying the mean() function. 
 After that we need to rename the columns of the tidy dataset to reflect that they are averaged now ('.averaged').
 And finnaly save the tidy dataset into "tidy.data.txt" file.
