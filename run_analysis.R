@@ -40,7 +40,7 @@ mean.std<-grepl('mean\\(\\)|std\\(\\)',colnames(X))
 X<-X[,mean.std]
 
 # 3. Uses descriptive activity names to name the activities in the data set
-# files '[y_train|test' and 'subject_train|test' represent separate columns of the final table (activity|patricipant id)
+# files 'y_train|test' and 'subject_train|test' represent separate columns of the final table (activity|patricipant id)
 
 activity<-rbind(yTrain,yTest)
 names(activity)<-"activity"
