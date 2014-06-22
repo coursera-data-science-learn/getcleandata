@@ -33,6 +33,7 @@ colnames(X)<-features[,"V2"]
 # 2. Extracts only the measurements on the mean and standard deviation for each measurement
 
 # create the logical vector indicating which columns contain 'mean()'|std()'
+# note that '(' and ')' are regular expressions so we need to separate them by using '//' sign
 # create the dataset with only 'mean()'|std()' variables
 
 mean.std<-grepl('mean\\(\\)|std\\(\\)',colnames(X))
