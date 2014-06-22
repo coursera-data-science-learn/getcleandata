@@ -1,5 +1,5 @@
 # Getting and Cleaning Data Course Project
-# Submission Date:
+# Submission Date: 21.06.2014
 # Prepared by: Titorchuk Oleksandr
 
 # Data details: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
