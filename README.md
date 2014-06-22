@@ -6,7 +6,7 @@ Prepared by: Titorchuk Oleksandr
 
 ## Code description: run_analysis.R
 
-This file provides details on how the original data was processed, and how the script, which handles it works.
+This file provides details on how the original data was processed, and how the script which handles it works.
 
 The script is divided into 5 blocks according to the exercise description.
 
