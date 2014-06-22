@@ -10,6 +10,7 @@ This file provides details on how the original data was processed, and how the s
 
 The script is divided into 5 blocks according to the exercise description.
 
+The proper work of this script demands 'reshape2' package to be downloaded.
 Preparatory work includes checking if the directory with original dataset exists ("UCI HAR Dataset"),and if not - downloading it, and also reading the neccesary data into R.
 
 ### 1. Merges the training and the test sets to create one data set
