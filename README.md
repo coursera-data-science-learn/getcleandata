@@ -18,7 +18,7 @@ Preparatory work includes checking if the directory with original dataset exists
 Column names are assigned to the resulting table from the "features" file.
 
 ### 2. Extracts only the measurements on the mean and standard deviation for each measurement
-grepl () function is used to create the logical vector, indicating which variables' names contain 'mean()' and 'std()' (note that '(' and ')' are regular expressions so we need to separate them by using '//' sign).
+grepl () function is used to create the logical vector, indicating which variables' names contain 'mean()' and 'std()'.
 This logical vector let us to subset only the needed columns from the 'X' dataset. 
 
 ### 3. Uses descriptive activity names to name the activities in the data set
