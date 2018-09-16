@@ -1,10 +1,10 @@
 # Getting and Cleaning Data Course Project
-# Submission Date: 21.06.2014
-# Prepared by: Titorchuk Oleksandr
+# Submission Date: 17.09.2018
+# Prepared by: Oleksandr Titorchuk
 
 # Data details: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-# download (if neccessary) and unzip the data
+# Download (if neccessary) and unzip the data
 
 if(!file.exists("UCI HAR Dataset")){
   url <- "http://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
@@ -12,7 +12,7 @@ if(!file.exists("UCI HAR Dataset")){
   unzip("raw_data.zip")
 }
 
-# read into R the data we need
+# Read into R the data we need
 
 xTrain<-read.table("UCI HAR Dataset/train/X_train.txt")
 yTrain<-read.table("UCI HAR Dataset/train/y_train.txt")
@@ -24,6 +24,7 @@ features <- read.table("UCI HAR Dataset/features.txt")
 activity.labels <- read.table("UCI HAR Dataset/activity_labels.txt")
 
 # 1. Merges the training and the test sets to create one data set
+
 # merge train and test data sets
 # name the columns of the resulting table
 
@@ -32,14 +33,15 @@ colnames(X)<-features[,"V2"]
 
 # 2. Extracts only the measurements on the mean and standard deviation for each measurement
 
-# create the logical vector indicating which columns contain 'mean()'|std()'
+# create the logical vector indicating which columns contain 'mean()|std()'
 # note that '(' and ')' are regular expressions so we need to separate them by using '//' sign
-# create the dataset with only 'mean()'|std()' variables
+# create the dataset with only 'mean()|std()' variables
 
 mean.std<-grepl('mean\\(\\)|std\\(\\)',colnames(X))
 X<-X[,mean.std]
 
 # 3. Uses descriptive activity names to name the activities in the data set
+
 # files 'y_train|test' and 'subject_train|test' represent separate columns of the final table (activity|patricipant id)
 
 activity<-rbind(yTrain,yTest)
@@ -68,7 +70,8 @@ for (i in 1:length(activity[,1])) {
 X<-cbind(subject, activity, X)
 
 # 4. Appropriately labels the data set with descriptive variable names
-# replace 't'|'f' with 'time.'|'freq.', 'Acc'|'Gyro' etc.
+
+# replace 't|f' with 'time|freq' etc.
 
 names(X)<-gsub('^t','time.',names(X))
 names(X)<-gsub('^f','freq.',names(X))
