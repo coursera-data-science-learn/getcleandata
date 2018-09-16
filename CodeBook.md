@@ -56,7 +56,7 @@ These signals were used to estimate a number of variables:
 * bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window
 * angle(): Angle between to vectors.
 
-We are interested in **mean()** and **std()** indicators for our study project.
+We are interested in mean() and std() indicators for our study project.
 
 ## Data Processing
 
